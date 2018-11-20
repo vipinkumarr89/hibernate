@@ -1,0 +1,63 @@
+log4j:WARN No appenders could be found for logger (org.jboss.logging).
+log4j:WARN Please initialize the log4j system properly.
+enter sname, smarks:
+vipin 12
+Hibernate: select max(studid) from studentdb
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+varun 71
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+ram 43
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+shyam 39
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+geeta 80
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+sunil 40
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+john 40
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+Kim 40
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+Lee 60
+Do you want to add new student [Y/N]? y
+enter sname, smarks:
+ramesh 90
+Do you want to add new student [Y/N]? n
+------------------------------------------------------------------------
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+Hibernate: insert into studentdb (sname, smarks, studid) values (?, ?, ?)
+------------------------------------------------------------------------
+Hibernate: update studentdb set sname=?, smarks=? where studid=?
+Hibernate: select student0_.studid as studid1_0_0_, student0_.sname as sname2_0_0_, student0_.smarks as smarks3_0_0_ from studentdb student0_ where student0_.studid=?
+Student{studid=2, sname='varun, smarks=71'}
+------------------------------------------------------------------------
+Hibernate: delete from studentdb where studid=?
+Hibernate: select student0_.studid as studid1_0_, student0_.sname as sname2_0_, student0_.smarks as smarks3_0_ from studentdb student0_
+Student{studid=1, sname='vipin kumar, smarks=92'}
+Student{studid=3, sname='ram, smarks=43'}
+Student{studid=4, sname='shyam, smarks=39'}
+Student{studid=5, sname='geeta, smarks=80'}
+Student{studid=6, sname='sunil, smarks=40'}
+Student{studid=7, sname='john, smarks=40'}
+Student{studid=8, sname='Kim, smarks=40'}
+Student{studid=9, sname='Lee, smarks=60'}
+Student{studid=10, sname='ramesh, smarks=90'}
+------------------------------------------------------------------------
+
+Process finished with exit code 0
